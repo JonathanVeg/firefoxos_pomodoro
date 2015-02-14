@@ -3,7 +3,7 @@
   "name": "Pomodoro",
   "description": "Pomodoro for FirefoxOS",
   "developer": {
-    "name": "Jonathan, Heron and Henrique"
+    "name": "Jonathan"
     },
     "launch_path": "/index.html",
     "installs_allowed_from": ["*"],
@@ -16,7 +16,6 @@
       "256": "/icons/256.png",
       "512": "/icons/512.png"
       },
-      "display": "fullscreen",
       "orientation": [ "portrait-primary" ],
       "version": "2.1"
     }
