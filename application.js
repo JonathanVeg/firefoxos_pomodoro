@@ -24,6 +24,25 @@ window.onload = function() {
 
 	setInterval(updateTime, 1000);
 
+	function getCurrentStepName(){
+		if (getLanguage == "en"){
+			if (current_step == "p")
+				return "Pomodoro";
+			else if (current_step == "b")
+				return "Break";
+			else if (current_step == "l")
+				return "Long break";
+		}else{
+			if (current_step == "p")
+				return "Pomodoro";
+			else if (current_step == "b")
+				return "Pausa";
+			else if (current_step == "l")
+				return "Pausa longa";
+		}
+
+	}
+
 	function updateTime() {
 		if (going){
 			label = "";
@@ -81,6 +100,8 @@ window.onload = function() {
 			}else{
 				$("#fullscreen").hide();
 			}
+
+			document.title = timer + " - " +  getCurrentStepName()
 		}
 	}
 
