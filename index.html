@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+	<title>Firefox OS</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+	<script type="text/javascript" src="application.js"></script>
+	<link rel="stylesheet" type="text/css" href="application.css">
+</head>
+<body>
+	<div id="menu">
+		<img src="images/pomodoro.png" width="64px", height="64px", id="goto_pomodoro", class="selected">
+		<img src="images/settings.png" width="64px", height="64px", id="goto_settings">
+		<img src="images/info.png" width="64px", height="64px", id="goto_infos">
+	</div>
+	<div id="panel_pomodoro">
+		<div>
+			<center>
+				<div id="show_timer">Pomodoro</div>
+			</center>
+		</div>
+		<div id="buttons_container">
+			<div id="buttons">
+				<!-- <div id="start" class="circle"></div> -->
+				<div id="break" class="circle">Play</div>
+				<div id="stop" class="circle">Stop</div>
+			</div>
+		</div>
+		<center>
+			<div class="message">
+			</div>
+		</center>
+	</div>
+
+	<div id="fullscreen">
+		<div id="fullscreen_content">
+			<div id="buttons">
+				<div id="cur_time" class="circle">x</div>
+			</div>
+			<center>
+				<div class="message">
+				</div>
+			</center>
+		</div>
+	</div>
+
+	<div id="panel_settings">
+		<center>
+			<div id="label_time">
+				Time (minutes):
+			</div>
+			<div id="label_pomodoro">
+				Pomodoro:
+			</div>
+			<input type="number" name="pomodoro_timer" id="pomodoro_timer">
+			<br>
+			<br>
+			<div id="label_break">
+				Break:
+			</div>
+			<input type="number" name="break_timer" id="break_timer">
+			<br>
+			<br>
+			<div id="label_longbreak">
+				Longbreak:
+			</div>
+			<input type="number" name="longbreak_timer" id="longbreak_timer">
+			<br>
+			<br>
+			<div id="buttons">
+				<div id="label_save">
+					<div id="save" class="circle">Save</div>
+				</div>
+			</div>
+			<br>
+			<div id="label_language">
+				Language:
+			</div>
+			<div id="buttons">
+				<img src="images/eua.png" width="64px", height="64px", id="language_eua", class="selected">
+				<img src="images/brazil.png" width="64px", height="64px", id="language_brazil">
+			</div>
+		</center>
+	</div>
+	<div id="panel_infos">
+		<div id="infos_pt">
+			<center>
+				<p>App criado por Jonathan Silva</p>
+				<hr />Gostou? Entre em contato:
+			</center>
+			<center><strong>E-mail:</strong> <a href="mailto:jonathan.jgs@gmail.com?subject=FirefoxOs%20-%20Pomodoro">jonathan.jgs@gmail.com</a></center>
+			<center><strong>Twitter:</strong> <a href="http://twitter.com/JonathanVeg2" target="_blank">@JonathanVeg2</a></center>
+			<center><strong>Facebook:</strong> <a href="http://fb.com/JonathanVeg" target="_blank">http://fb.com/JonathanVeg</a></center>
+			<br>
+			<div id="footer">
+				<hr />
+				<center>
+					<div id="small_text">Todos os ícones vieram do <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> e estão sob a licença <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+				</center>
+			</div>
+		</div>
+		<div id="infos_en">
+			<p>App created by Jonathan Silva</p>
+			<hr />Did you like it? Contact me:</center>
+			<center><strong>E-mail:</strong> <a href="mailto:jonathan.jgs@gmail.com?subject=FirefoxOs%20-%20Pomodoro">jonathan.jgs@gmail.com</a></center>
+			<center><strong>Twitter:</strong> <a href="http://twitter.com/JonathanVeg2" target="_blank">@JonathanVeg2</a></center>
+			<center><strong>Facebook:</strong> <a href="http://fb.com/JonathanVeg" target="_blank">http://fb.com/JonathanVeg</a></center>
+			<br>
+			<div id="footer">
+				<hr />
+				<center>
+					<div id="small_text">All icons are from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> and it is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+				</center>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
