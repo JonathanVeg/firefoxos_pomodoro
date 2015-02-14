@@ -68,6 +68,8 @@ window.onload = function() {
 			else
 				timer = (Math.floor(current_timer / 60)).toString() + ":" + (current_timer % 60).toString();
 
+			document.title = timer + " - " +  getCurrentStepName()
+
 			$("#show_timer").html(label + " " + timer);
 
 			$("#cur_time").html(timer);
@@ -101,7 +103,6 @@ window.onload = function() {
 				$("#fullscreen").hide();
 			}
 
-			document.title = timer + " - " +  getCurrentStepName()
 		}
 	}
 
@@ -189,7 +190,7 @@ window.onload = function() {
 		else
 			$("#break").html("Começar");
 		
-		$("#show_timer").html(label + " " + timer);
+		$("#show_timer").html("Pomodoro: " + timer);
 
 		going = false;
 	});
