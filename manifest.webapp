@@ -16,6 +16,5 @@
       "256": "/icons/256.png",
       "512": "/icons/512.png"
       },
-      "orientation": [ "portrait-primary" ],
       "version": "2.1"
     }
