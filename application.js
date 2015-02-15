@@ -82,7 +82,7 @@ window.onload = function() {
 
 			if (getLanguage() == "en"){
 				if (current_step == "p"){
-					$(".message").html("Now is time for work. Don't give up and keep your focus.")
+					$(".message").html("Now is time for work. Keep your focus.");
 				}else if (current_step == "b"){
 					$(".message").html("Break. Try to relax and not work for now.");
 				}else{
@@ -90,7 +90,7 @@ window.onload = function() {
 				}
 			}else{
 				if (current_step == "p"){
-					$(".message").html("Agora é hora de trabalhar. Não desista e tente manter o foco.")
+					$(".message").html("Agora é hora de trabalhar. Mantenha o foco!");
 				}else if (current_step == "b"){
 					$(".message").html("Pausa. Tente relaxar e não trabalhe por enquanto.");
 				}else{
